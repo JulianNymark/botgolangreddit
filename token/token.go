@@ -10,14 +10,9 @@ var fileName string = "./token/jwt"
 
 func Get()(token string, err error){
 	temp , err := ioutil.ReadFile(fileName)
-	
 	if err != nil {
-		fmt.Println("error")
-		fmt.Println(err)
 	} else {
-	
 	token = string(temp)
-	fmt.Println(token)
 	}
 	return 
 }
